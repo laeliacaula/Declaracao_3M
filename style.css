@@ -5,7 +5,7 @@
   --rose: #e97aa0;
   --rose-forte: #d64f80;
   --vinho: #7a2148;
-  --lilas: #B89BC9;
+  --rosa-titulo: #C27BA0;
   --branco: #ffffff;
   --sombra: 0 12px 32px rgba(214, 79, 128, 0.18);
   --fonte-titulo: "Dancing Script", "Brush Script MT", cursive;
@@ -91,7 +91,7 @@ body {
   animation: entrada-titulo 1.6s cubic-bezier(.2, .8, .2, 1) both, pulsar 3.5s ease-in-out 1.8s infinite;
 }
 
-.titulo span { display: block; color: var(--lilas); }
+.titulo span { display: block; color: var(--rosa-titulo); }
 
 @keyframes entrada-titulo {
   from { opacity: 0; transform: scale(0.85) translateY(20px); filter: blur(6px); }
