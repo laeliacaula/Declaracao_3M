@@ -23,7 +23,7 @@ window.CONFIG = {
   musicaFim: 58,
 
   // Segundos até a pergunta "Deseja continuar?" aparecer.
-  segundosPergunta: 10,
+  segundosPergunta: 3,
 
   // Segundos entre cada movimento do carrossel.
   segundosPorFoto: 3
