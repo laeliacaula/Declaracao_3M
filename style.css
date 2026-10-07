@@ -5,7 +5,7 @@
   --rose: #e97aa0;
   --rose-forte: #d64f80;
   --vinho: #7a2148;
-  --rosa-titulo: #B654A9;
+  --rosa-titulo: #8E3F86;
   --branco: #ffffff;
   --sombra: 0 12px 32px rgba(214, 79, 128, 0.18);
   --fonte-titulo: "Dancing Script", "Brush Script MT", cursive;
@@ -264,7 +264,12 @@ body {
   animation: entrada-foto 1s ease 0.8s forwards;
 }
 
-.mensagem-final span { display: block; }
+.mensagem-final span {
+  display: block;
+  color: var(--rosa-titulo);
+  font-family: "Source Sans 3", "Source Sans Pro", Arial, sans-serif;
+  font-weight: 400;
+}
 
 .mensagem-final .destaque {
   font-family: var(--fonte-titulo);
