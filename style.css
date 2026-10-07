@@ -5,6 +5,7 @@
   --rose: #e97aa0;
   --rose-forte: #d64f80;
   --vinho: #7a2148;
+  --ouro-rose: #b76e79;
   --branco: #ffffff;
   --sombra: 0 12px 32px rgba(214, 79, 128, 0.18);
   --fonte-titulo: "Dancing Script", "Brush Script MT", cursive;
@@ -90,7 +91,18 @@ body {
   animation: entrada-titulo 1.6s cubic-bezier(.2, .8, .2, 1) both, pulsar 3.5s ease-in-out 1.8s infinite;
 }
 
-.titulo span { display: block; color: var(--vinho); }
+/* "3 meses" em ouro rosé com brilho metálico */
+.titulo span {
+  display: block;
+  color: var(--ouro-rose);
+  background: linear-gradient(115deg, #8f4456 0%, #b76e79 35%, #dc9e9c 50%, #b76e79 65%, #8a3f52 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(0 2px 3px rgba(122, 33, 72, 0.25));
+  padding: 0 0.12em; /* evita cortar as pontas da letra cursiva */
+}
 
 @keyframes entrada-titulo {
   from { opacity: 0; transform: scale(0.85) translateY(20px); filter: blur(6px); }
