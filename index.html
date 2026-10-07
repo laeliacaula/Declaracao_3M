@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Feliz 3 meses 💗</title>
+  <meta name="theme-color" content="#fde4ec">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="coracoes" aria-hidden="true"></div>
+
+  <!-- Etapa 1: abertura -->
+  <section id="tela-inicial" class="tela ativa">
+    <h1 class="titulo">Feliz <span>3 meses</span></h1>
+
+    <div id="pergunta" class="pergunta" role="dialog" aria-live="polite" hidden>
+      <p>Deseja continuar?</p>
+      <div class="botoes">
+        <button id="btn-sim" class="btn btn-sim" type="button">Sim</button>
+        <button id="btn-nao" class="btn btn-nao" type="button">Não</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Etapa 2: fotos e mensagem -->
+  <section id="tela-fotos" class="tela" hidden>
+    <div class="carrossel-area">
+      <button id="btn-anterior" class="seta seta-anterior" type="button" aria-label="Foto anterior" hidden>‹</button>
+      <div class="carrossel">
+        <div id="trilho" class="trilho"></div>
+      </div>
+      <button id="btn-proxima" class="seta seta-proxima" type="button" aria-label="Próxima foto" hidden>›</button>
+    </div>
+    <p id="mensagem-final" class="mensagem-final"></p>
+  </section>
+
+  <button id="btn-musica" class="btn-musica" type="button" aria-label="Pausar música" hidden>🎵</button>
+  <audio id="musica" preload="none" loop></audio>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
